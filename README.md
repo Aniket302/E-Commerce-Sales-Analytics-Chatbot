@@ -217,7 +217,13 @@ Docker Compose is the recommended way to run the complete application.
 
 1.  Create `.env` from `.env.example`.
 2.  Add your Groq API key to `.env`.
-3.  Start the application:
+3.  Create the database/olist.db file using the script:
+
+``` powershell
+python scripts/load_db.py
+```
+
+4.  Start the application:
 
 ``` powershell
 docker compose up
