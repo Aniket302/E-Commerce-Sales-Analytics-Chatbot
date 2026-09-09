@@ -307,15 +307,15 @@ The agent extracts common analytical parameters from user queries.
 
 Examples:
 
-  User phrase            Interpretation
-  ---------------------- ---------------------------------------------------
-  `last year`            2017-01-01 to 2017-12-31
-  `first half of 2017`   2017-01-01 to 2017-06-30
-  `São Paulo`            State `SP`
-  `top 10`               Limit 10, descending by relevant metric
-  `worst rated`          Ascending average review score
-  `electronics`          English product category through translation data
-  No date range          Full available dataset
+| User phrase | Interpretation |
+|---|---|
+| `last year` | 2017-01-01 to 2017-12-31 |
+| `first half of 2017` | 2017-01-01 to 2017-06-30 |
+| `São Paulo` | State `SP` |
+| `top 10` | Limit 10, descending by relevant metric |
+| `worst rated` | Ascending average review score |
+| `electronics` | English product category through translation data |
+| No date range | Full available dataset |
 
 When no date range is supplied, the response states that the full
 dataset was used.
@@ -324,16 +324,16 @@ dataset was used.
 
 Charts are selected according to the analytical shape of the result.
 
-  Data shape                            Chart
-  ------------------------------------- ------------------------
-  Single metric over time               Line
-  Two metrics over the same time axis   Dual-axis line
-  Ranked top N                          Horizontal bar
-  Category comparison in one period     Vertical bar
-  Part-to-whole                         Donut
-  Two continuous variables per entity   Scatter
-  Review score distribution             Horizontal bar
-  Ambiguous shape                       Multiple chart options
+| Data shape | Chart |
+|---|---|
+| Single metric over time | Line |
+| Two metrics over the same time axis | Dual-axis line |
+| Ranked top N | Horizontal bar |
+| Category comparison in one period | Vertical bar |
+| Part-to-whole | Donut |
+| Two continuous variables per entity | Scatter |
+| Review score distribution | Horizontal bar |
+| Ambiguous shape | Multiple chart options |
 
 Examples:
 
