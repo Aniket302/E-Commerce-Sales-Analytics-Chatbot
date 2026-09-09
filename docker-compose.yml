@@ -1,0 +1,48 @@
+services:
+
+  backend:
+    build:
+      context: .
+      dockerfile: Dockerfile
+
+    container_name: ecommerce-analytics-backend
+
+    env_file:
+      - .env
+
+    command: >
+      uvicorn api:app
+      --host 0.0.0.0
+      --port 8000
+
+    ports:
+      - "8000:8000"
+
+    restart: unless-stopped
+
+
+  dashboard:
+    build:
+      context: .
+      dockerfile: Dockerfile
+
+    container_name: ecommerce-analytics-dashboard
+
+    env_file:
+      - .env
+
+    environment:
+      API_BASE_URL: http://backend:8000
+
+    command: >
+      streamlit run dashboard/app.py
+      --server.address=0.0.0.0
+      --server.port=8501
+
+    ports:
+      - "8501:8501"
+
+    depends_on:
+      - backend
+
+    restart: unless-stopped
