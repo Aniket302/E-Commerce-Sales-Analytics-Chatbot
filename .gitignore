@@ -219,3 +219,4 @@ __marimo__/
 
 # To not commit olist files
 data/
+database/olist.db
