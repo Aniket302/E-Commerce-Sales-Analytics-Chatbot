@@ -5,6 +5,10 @@ Dataset by Olist**. The application converts natural-language business
 questions into structured analytics using an LLM, MCP tools, SQLite, and
 interactive charts.
 
+<img width="1908" height="351" alt="image" src="https://github.com/user-attachments/assets/27ee9a5c-710c-4f2c-baf8-480f40a18e09" />
+<img width="1778" height="608" alt="image" src="https://github.com/user-attachments/assets/9a1d7b6e-1d3a-4fa7-bc1b-73ff46553fe3" />
+
+
 ## Features
 
 -   Natural-language e-commerce analytics queries
