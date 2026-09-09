@@ -119,27 +119,14 @@ DSI/
 
 The MCP layer exposes six analytics tools:
 
-  -----------------------------------------------------------------------
-  Tool                                Purpose
-  ----------------------------------- -----------------------------------
-  `get_order_trends`                  Revenue, order volume, and average
-                                      order value over time
-
-  `get_category_performance`          Category revenue, orders, freight,
-                                      and review performance
-
-  `get_seller_performance`            Seller revenue, orders, ratings,
-                                      and delivery performance
-
-  `get_review_analysis`               Review scores, distributions,
-                                      counts, and response times
-
-  `get_payment_breakdown`             Payment types, payment values,
-                                      counts, and installments
-
-  `get_delivery_performance`          Delivery time, delay, on-time rate,
-                                      and route/state performance
-  -----------------------------------------------------------------------
+| Tool | Purpose |
+|---|---|
+| `get_order_trends` | Revenue, order volume, and average order value over time |
+| `get_category_performance` | Category revenue, orders, freight, and review performance |
+| `get_seller_performance` | Seller revenue, orders, ratings, and delivery performance |
+| `get_review_analysis` | Review scores, distributions, counts, and response times |
+| `get_payment_breakdown` | Payment types, payment values, counts, and installments |
+| `get_delivery_performance` | Delivery time, delay, on-time rate, and route/state performance |
 
 ### Category Translation
 
